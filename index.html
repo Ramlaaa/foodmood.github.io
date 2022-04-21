@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>FooD MooD</title>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#showcase">home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#food">Category</a></li>
+                <li><a href="#food-menu">Menu</a></li>
+                <!-- <li><a href="#testimonials">Testimonial</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <h1 class="logo">FooD MooD <img src="img/logo.jpg" width="85px" height="65px" halt=""></h1>
+            
+        </div>
+        <div class="mx-2">
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Order Now</button>
+          </div>
+    </nav>
+<!-- modal order -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">FooD MooD</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Enter Your Full Name</label>
+                  <input type="text" class="form-control" id="exampleInputtext" aria-describedby="emailHelp">
+                 
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Eenter your order</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+      
+                <div class="mb-3">
+                  <label for="exampleInputtext" class="form-label">Enter Your Phone Number</label>
+                  <input type="text" class="form-control" id="exampleInputtext">
+                </div>
+      
+                <div class="mb-3">
+                  <label for="exampleInputtext" class="form-label">Enter Your home address</label>
+                  <input type="text" class="form-control" id="exampleInputtext">
+                </div>
+                <!-- <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1"></label>
+                </div> -->
+                
+              </form>
+            
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/c5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Chocolate CaKe</h1>
+              <p>Eat healthy food, and make your health fresh.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/c0.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>PiZZA</h1>
+              <p>Eat healthy food, and make your health fresh.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/c1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Fast FooD</h1>
+              <p>Eat healthy food, and make your health fresh.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> 
+
+
+    <!-- <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title">Eat Right Food</h1>
+            <p>Eat healthy food, and make your health fresh</p>
+            <a href="#food-menu" class="btn btn-primary">Menu</a>
+        </div>
+    </section> -->
+
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">About Us</p>
+                <h2>We've have been making healthy food for last 10 years</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic ratione iusto recusandae consequuntur,
+                    inventore dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam in minus,
+                    natus optio ab harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti suscipit
+                    laboriosam quaerat corrupti aliquam laudantium beatae. Laborum in possimus magni!......</p>
+            </div>
+            <div class="about-img">
+                <img src="./img/about-photo.jpg" alt="about img">
+            </div>
+        </div>
+    </section>
+
+    <section id="food">
+        <h2>types of Food</h2>
+        <div class="food-container container">
+            <div class="food-type fruit">
+                <div class="img-container">
+                    <img src="./img/f8.jpg" alt="">
+                    <div class="img-content">
+                        <h3>CaKe</h3>
+                        <a href="https://en.wikipedia.org/wiki/Fruit" class="btn btn-primary" target="_blank">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-type vegetable">
+                <div class="img-container">
+                    <img src="./img/f9.jpg" alt="">
+                    <div class="img-content">
+                        <h3>Fried Chicken</h3>
+                        <a href="https://en.wikipedia.org/wiki/Vegetable" class="btn btn-primary" target="_blank">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-type grain">
+                <div class="img-container">
+                    <img src="./img/f3.jpg" alt="">
+                    <div class="img-content">
+                        <h3>jam Bread</h3>
+                        <a href="https://en.wikipedia.org/wiki/Grain" class="btn btn-primary" target="_blank">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="food">
+        
+        <div class="food-container container">
+            <div class="food-type fruit">
+                <div class="img-container">
+                    <img src="./img/f1.jpg" alt="">
+                    <div class="img-content">
+                        <h3>PiZZA</h3>
+                        <a href="https://en.wikipedia.org/wiki/Fruit" class="btn btn-primary" target="_blank">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-type vegetable">
+                <div class="img-container">
+                    <img src="./img/f2.jpg" alt="">
+                    <div class="img-content">
+                        <h3>Brackfast</h3>
+                        <a href="https://en.wikipedia.org/wiki/Vegetable" class="btn btn-primary" target="_blank">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-type grain">
+                <div class="img-container">
+                    <img src="./img/f6.jpg" alt="">
+                    <div class="img-content">
+                        <h3>Baryani</h3>
+                        <a href="https://en.wikipedia.org/wiki/Grain" class="btn btn-primary" target="_blank">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="food-menu">
+        <h2 class="food-menu-heading">
+            Food Menu
+        </h2>
+        <div class="food-menu-container container">
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu1.jpg" alt="">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, commodi.</p>
+                    <p class="food-price">Price: &#8377 240</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu4.jpg" alt="">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, commodi.</p>
+                    <p class="food-price">Price: &#8377 525</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu3.jpg" alt="">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, commodi.</p>
+                    <p class="food-price">Price: &#8377 320</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu4.jpg" alt="">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, commodi.</p>
+                    <p class="food-price">Price: &#8377 150</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu6.jpg" alt="">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 5</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, commodi.</p>
+                    <p class="food-price">Price: &#8377 225</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu1.jpg" alt="">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 6</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, commodi.</p>
+                    <p class="food-price">Price: &#8377 300</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2 class="testimonial-title">What our customer say</h2>
+        <div class="testimonial-container container">
+            <div class="testimonial-box">
+
+                <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore animi
+                    eligendi praesentium totam commodi quia.</p>
+                <div class="customer-detail">
+                    <div class="customer-image"><img src="./img/male-photo1.jpg" alt=""></div>
+
+                    <p class="customer-name">Azi Khan</p>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <br>
+                    <hr>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore animi
+                    eligendi praesentium totam commodi quia.</p>
+                <div class="customer-detail">
+                    <div class="customer-image"><img src="./img/male-photo2.jpg" alt=""></div>
+                    <p class="customer-name">Nabeel khan</p>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <br>
+                    <hr>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore animi
+                    eligendi praesentium totam commodi quia.</p>
+                <div class="customer-detail">
+                    <div class="customer-image"><img src="./img/male-photo3.jpg" alt=""></div>
+                    <p class="customer-name">Ikram khan</p>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <br>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <hr>
+    <br><br>
+    <footer class="py-5 mx-4 align-items-center">
+        <div class="row">
+          <div class="col-2">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-2">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-2">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+        
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+          <p>© 2021 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+
+
+    <!-- ################################### smooth scroling ############################# -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
